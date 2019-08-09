@@ -1,0 +1,15 @@
+﻿@model IEnumerable<WebApplication1.Models.Store>
+@using System.Web.Optimization
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id='store'></div>
+
+@section Scripts{
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/Scripts/react/dist/Store.bundle.js"></script>
+}
